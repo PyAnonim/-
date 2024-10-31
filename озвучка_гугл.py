@@ -7,9 +7,8 @@ import re
 from telebot.types import Message
 from telebot import TeleBot, types
 
-TOKEN = '7257116435:AAGHyYO20XdiLWPykSW48zXxrDDM12I6_kg'  # Замените на свой токен
+TOKEN = 'YOUR_BOT_TOKEN'  # Замените на свой токен
 bot = telebot.TeleBot(TOKEN)
-forbidden_words = ["мат1", "мат2", "мат3", "мат4", "мат5", "мат6","мат7 и тд..."]
 
 @bot.message_handler(commands=['start'])
 def send_message(message):
